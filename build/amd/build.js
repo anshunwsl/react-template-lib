@@ -1,0 +1,1 @@
+({"appDir":"../../dist/amd","baseUrl":".","dir":"../../dist/amd","optimize":"uglify2","throwWhen":{"optimize":false},"locale":"en-us","inlineText":true,"allowSourceOverwrites":true,"keepBuildDir":true,"optimizeCss":"standard"});

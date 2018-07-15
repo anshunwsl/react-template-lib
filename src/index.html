@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+  <!-- Add to home screen for Android and modern mobile browsers -->
+  <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
+  <meta name="theme-color" content="#4DBA87">
+
+  <!-- Add to home screen for Windows -->
+</head>
+<body>
+<noscript>
+  This is your fallback content in case JavaScript fails to load.
+</noscript>
+<div id="app"></div>
+
+<!--<script src="<%= htmlWebpackPlugin.files.publicPath %>0.bundle.js"></script>-->
+
+
+<!--当框架中需要使用GIS 3.x 通用框架时， 在打包时需要取消下面两行注释，其它情况都不需要改动。-->
+<!--<script src="<%= htmlWebpackPlugin.files.publicPath %>node_modules/jquery/dist/jquery.min.js"></script>-->
+<!--<script src="<%= htmlWebpackPlugin.files.publicPath %>node_modules/dse-layerui/layer/layer.js"></script>-->
+<!-- Todo: only include in production -->
+<%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+<!-- built files will be auto injected -->
+</body>
+</html>
