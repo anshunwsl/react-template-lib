@@ -1,0 +1,29 @@
+@charset "UTF-8";
+//
+
+//
+
+
+.sla-user {
+  //
+  background: #da1126;
+  //
+  width: 100%;
+  height: 32px;
+
+  .title {
+    //
+    width: 100%;
+    height: 48px;
+    background: antiquewhite;
+    //
+    color: #282c34;
+  }
+
+  .content {
+    //
+    background: #ddc;
+    width: 100%;
+    height: 100%;
+  }
+}

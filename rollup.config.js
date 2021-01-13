@@ -98,12 +98,16 @@ export default [
                 //
                 targets: [
                     {
-                        src: "./src/common/**/*.d.ts",
+                        src: "./src/common/index.d.ts",
+                        dest: `${PROJECT_NAME}`
+                    },
+                    //
+                    {
+                        src: "./src/common/types",
                         dest: `${PROJECT_NAME}`
                     }
                 ]
             }),
-
             //
             del({
                 //
