@@ -29,7 +29,8 @@ const babelOptions = {
     // configFile: path.resolve(__dirname, '../../../babel.config.js'),
 };
 const commonjsOptions = {
-    ignoreGlobal: true,
+    ignoreGlobal: false,
+    exclude: ["node_modules/**"]
     // include: /node_modules/,
     // namedExports: {
     //   '../../node_modules/prop-types/index.js': [
@@ -118,10 +119,13 @@ export default [
             nodeGlobals(), // Wait for https://github.com/cssinjs/jss/pull/893
             replace({'process.env.NODE_ENV': JSON.stringify('development')}),
         ],
+        //
+        context:"window"
     },
     {
         input,
         onwarn,
+        context:"window",
         output: {
             // file: 'build/umd/material-ui.production.min.js',
             file: `${PROJECT_NAME}/index.js`,
