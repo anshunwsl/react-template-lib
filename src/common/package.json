@@ -1,0 +1,8 @@
+{
+  "name": "slash-gis",
+  "version": "1.0.0",
+  "description": "gis 组件...",
+  "dependencies": {
+  },
+  "types": "./types"
+}

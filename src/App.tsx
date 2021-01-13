@@ -2,6 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import  "slash-gis/index.css";
+// @ts-ignore
+import  {SlaGis,BaseWidget} from "slash-gis/index";
+
+
 function App() {
   return (
     <div className="App">
@@ -17,8 +22,21 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+
+
         </a>
       </header>
+
+      <SlaGis></SlaGis>
+
+      <SlaGis></SlaGis>
+
+      <SlaGis></SlaGis>
+
+      <SlaGis></SlaGis>
+
+
+        <BaseWidget></BaseWidget>
     </div>
   );
 }
